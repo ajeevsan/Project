@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/images/Vector.svg" type="svg" />
+</head>
+
+<body>
+    <div class="container">
+
+
+        <form class="well form-horizontal" action="/checkout" method="post" id="contact_form">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>
+                    <center>
+                        <h2><b>Payment</b></h2>
+                    </center>
+                </legend><br>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Select a Tree</label>
+                    <div class="col-md-4 selectContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                            <select name="tree" class="form-control selectpicker">
+                                <option value="150" name>Gulmohar Tree - ₹250</option>
+                                <option value="200">Indian Mohagany - ₹200</option>
+                                <option value="200">Indian Rose - ₹200</option>
+                                <option value="50">Ixora Flower - ₹50</option>
+                                <option value="100">Jamun Tree - ₹100</option>
+                                <option value="200">Jasmine Flower - ₹200</option>
+                                <option value="150">Mango Tree - ₹150</option>
+                                <option value="80">Marigold Flower - ₹80</option>
+                                <option value="100">Neem Tree - ₹100</option>
+                                <option value="120">Pepal Tree - ₹120</option>
+                                <option value="80">Wild Tulip - ₹80</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Confirm Tree Name</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-tree-deciduous"></i></span>
+                            <input name="tname" placeholder="Tree Name" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Select Basic -->
+
+                <!-- Success message -->
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4"><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button
+                            id="rzp-button1" type="submit"
+                            class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span
+                                class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <!-- <form id="paymentVerifyForm" action="/payment/verify" method="POST">
+        <input name="razorpay_payment_id" type="hidden" id="razorpay_payment_id" />
+        <input name="razorpay_order_id" type="hidden" id="razorpay_order_id"/>
+        <input name="razorpay_signature" type="hidden" id="razorpay_signature"/>
+    </form> -->
+    </div><!-- /.container -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        // var orderId;
+        // $(document).ready(function () {
+        //     var settings = {
+        //         "url": "/create/orderId",
+        //         "method": "POST",
+        //         "timeout": 0,
+        //         "headers": {
+        //             "Content-Type": "application/json"
+        //         },
+        //         "data": JSON.stringify({
+        //             "amount": "50000"
+        //         }),
+        //     };
+
+        //     //creates new orderId everytime
+        //     $.ajax(settings).done(function (response) {
+
+        //         orderId = response.id;
+        //         console.log(orderId);
+        //         $("button").show();
+        //     });
+        // });
+
+        // document.getElementById('rzp-button1').onclick = async function (e) {
+        //     let orderData = await response.json();
+        //     var options = {
+        //         "key": "rzp_test_3MMlptG1JZqyps", // Enter the Key ID generated from the Dashboard
+        //         "amount": orderData.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        //         "currency": "INR",
+        //         "name": "The Gardening Geeks",
+        //         "description": "Private Limited",
+        //         "image": "/public/images/Vector.svg", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+        //         "handler": function (response) {
+        //             alert(response.razorpay_payment_id);
+        //             alert(response.razorpay_order_id);
+        //             alert(response.razorpay_signature)
+
+        //             var settings = {
+        //                 "url": "/api/payment/verify",
+        //                 "method": "POST",
+        //                 "timeout": 0,
+        //                 "headers": {
+        //                     "Content-Type": "application/json"
+        //                 },
+        //                 "data": JSON.stringify({ response }),
+        //             }
+        //         },
+        //         "modal": {
+        //             ondismiss: function () {
+        //                 alert(`Payment Failed`)
+        //             }
+        //         },
+        //         "theme": {
+        //             "color": "#3399cc"
+        //         }
+        //     };
+        //     rzp1.open();
+        //     e.preventDefault();
+        // }
+
+        // function checkout(event) {
+        //     let orderData = await response.json();
+        //     var options = {
+        //         "key": "rzp_test_3MMlptG1JZqyps",
+        //         "amount": "500",
+        //         "currency": "INR",
+        //         "order_id": orderData.id,
+        //         "handler": function (response) {
+        //             alert(response.razorpay_payment_id);
+        //             alert(response.razorpay_order_id);
+        //             alert(response.razorpay_signature);
+        //         }
+
+        //     };
+        //     var rzp1 = new Razorpay(options);
+        //     rzp1.open();
+        //     event.preventDefault();
+        // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #FFFA8C;
+}
+
+.form {
+    min-height: 700px;
+}
+
+.logo-img {
+    position: relative;
+    width: auto;
+    height: 60px;
+    margin: 80px auto;
+    display: flex;
+}
+
+.input-field {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+form .btn {
+    margin: auto;
+    display: flex;
+    background-color: #009BA0;
+    color: white;
+}
+
+form .btn:hover {
+    background-color: white;
+    color: #009BA0;
+}
+
+.container {
+    display: block;
+}
+
+.input-group-login {
+    top: 9.375rem;
+    position: absolute;
+    width: 17.5rem;
+    transition: .5s;
+}
+
+.submit-btn-login {
+    width: 39%;
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    display: block;
+    margin: 1.375rem auto;
+    background: #D0D0D000;
+    border: .125rem solid white;
+    outline: none;
+    border-radius: 1.875rem;
+    color: white;
+    margin-top: 80px;
+}

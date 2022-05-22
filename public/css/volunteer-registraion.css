@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-image: url("/images/Volunteer\ login.jpg");
+    height: auto;
+    width: auto;
+}
+
+.heading {
+	text-align: center;
+	width: 330px;
+	position: relative;
+	right: 48px;
+}
+
+
+.full-page {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 1.75rem;
+}
+
+
+
+.logo-img {
+    height: 3.875rem;
+    width: auto;
+    display: flex;
+    margin: 1.25rem auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-box {
+    width: 30.8rem;
+    height: 48.875rem;
+    position: relative;
+    margin: 1% auto;
+    background: #ffffffa3;
+    padding: .625rem;
+    /* overflow: hidden; */
+    top: 0rem;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    padding-bottom: 0px;
+}
+
+
+.button-box {
+    width: 14.75rem;
+    margin: 2.1875rem auto;
+    position: relative;
+    /* box-shadow: 0 0 1.25rem .5625rem #ff61241f; */
+    border-radius: 1.875rem;
+}
+
+/* .toggle-btn {
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+} */
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 6.875rem;
+    height: 100%;
+    background: #686767a1;
+    border-radius: 1.875rem;
+    transition: .5s;
+}
+
+.vol-btn {
+    background: transparent;
+    border-radius: 1.5rem;
+    width: 12.0625rem;
+    height: 2.625rem;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: .125rem white solid;
+}
+
+.vol-btn a {
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: white;
+    font-size: .9375rem;
+}
+
+
+.input-group-register {
+    top: 7.5rem;
+    position: absolute;
+    width: 17.5rem;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: .625rem 0;
+    margin: .3125rem 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: .0625rem solid black;
+    outline: none;
+    background: transparent;
+    color: #625f5f;
+}
+
+.input-field-textarea {
+	border: 1px solid black;
+	background-color: #b9b6b678;
+	/* width: auto; */
+	margin: 5px auto;
+	width: auto;
+    border-radius: 10px;
+}
+
+
+.submit-btn-reg {
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    display: block;
+    margin: 1.375rem auto;
+    background: #1A1A1A00;
+    border: .125rem solid black;
+    outline: none;
+    border-radius: 1.875rem;
+    color: black;
+    text-align: center;
+    width: auto;
+}
+
+.check-box {
+    margin: 1.875rem .625rem 2.125rem 0;
+}
+
+span {
+    color: #777;
+    font-size: .75rem;
+    bottom: 10.125rem;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+
+
+
+#register {
+	text-align: center;
+	/* display: flex; */
+	margin: 0px auto;
+	position: relative;
+	top: 0px;
+	width: 350px;
+}
+
+#register input {
+    color: black;
+    font-size: 15;
+}

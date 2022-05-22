@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(270deg, #AFE265 4.87%, #009BA0 96.48%);
+}
+
+
+.title {
+	font-size: 40px;
+	text-align: center;
+	margin: 119px auto;
+    color: black;
+}
+
+.title img {
+    margin: 20px;
+}
+
+.quote {
+    font-family: 'Satisfy', cursive;
+}

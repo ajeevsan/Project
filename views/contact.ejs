@@ -1,0 +1,48 @@
+<!-- contact us -->
+<section id="contact">
+  <div class="contact-us" id="button">
+    <div class="contact-text">
+      <h1>Together We Can Make Difference</h1>
+      <p>
+        Be a part of our family!! We'll plant for you in the name of your loved
+        ones too
+      </p>
+    </div>
+    <div class="contact-btn">
+      <i class="fa-solid fa-envelope"></i>
+      <p>Contact Us</p>
+    </div>
+
+</section>
+
+<!-- Modal section -->
+<div class="bg-modal" id="bg-modal">
+  <div class="modal-contents">
+    <div class="close" id="close">+</div>
+    <img src="https://richardmiddleton.me/comic-100.png" alt="" />
+
+    <form class="form" action="https://formsubmit.co/shalinisen26@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Enetr name..."
+        style="position: relative; margin: 1.25rem auto; border-radius: .75rem; width: 18.75rem; background-color: #FFFA8C80;">
+      <input type="email" name="email" required placeholder="Enetr email..."
+        style="position: relative; margin: 1.25rem auto; border-radius: .75rem; width: 18.75rem;  background-color: #FFFA8C80;">
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message..."
+        style="position: relative; margin: 1.25rem auto; border-radius: .75rem; width: 18.75rem;  background-color: #FFFA8C80;"></textarea>
+      <button type="submit" action="#contact" class="button"
+        >Send</button>
+    </form>
+  </div>
+</div>
+</div>
+
+<script>
+
+  let visible = true;
+  document.getElementById("button").addEventListener("click", function () {
+    document.getElementById("bg-modal").style.display = "flex";
+  });
+
+  document.getElementById("close").addEventListener("click", function () {
+    document.getElementById("bg-modal").style.display = "none";
+  });
+</script>

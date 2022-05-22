@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>LogIn/Registration</title>
+    <link rel="stylesheet" href="/css/login-registration.css"/>
+    <link rel="shortcut icon" href="/images/Vector.svg" type="svg">
+  </head>
+  <body>
+    <div class="full-page">
+      <a href="/"><img class="logo-img" src="images/Logo.png" alt="logo-img"></a>
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Log In
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Register
+            </button>
+          </div>
+          <form id="login" class="input-group-login" method="post" action="/login">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email Id"
+              required
+              name="loginEmail"
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+              name="loginPassword"
+            />
+        
+            
+            <button type="submit" class="submit-btn-login">Log in</button>
+            <button class="vol-btn"> <a href="/volunteer-login" >Volunteer Login</a></button>
+            <button class="admin-login"><a href="/admin-login">Admin Login</a></button>
+          </form>
+          <!-- <section class="volu-login"><a href="/volunteer-login-reg">Log in for Volunteer's</a> </section> -->
+          <form id="register" class="input-group-register" method="post" action="/registration">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+              name="regFirstName"
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name "
+              required
+              name="regLastName"
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              required
+              name="regEmail"
+            />
+            <input
+              id="reg-password"
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+              name="regPassword"
+            />
+            <input
+              id="reg-conf-password"
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              required
+              name="regCnfPassword"
+            />
+            <select name="gender" class="input-field" id="">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <button type="submit" class="submit-btn-reg" onclick="auth()">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      let btn1 = document.getElementsByClassName("toogle-btn")[0];
+      let btn2 = document.getElementsByClassName("toogle-btn")[1];
+      let login_bool = false;
+      let reg_bool = false;
+      
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+        z.style.color = "white";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+
+      let pass1 = document.getElementById("reg-password").value;
+      let pass2 = document.getElementById("reg-conf-password").value;
+
+      function auth(){
+        // if(pass1 != pass2){
+        // alert("Plese enter the same password.");
+      // } 
+      console.log(pass1, pass2);
+      }
+      
+
+    </script>
+  </body>
+</html>

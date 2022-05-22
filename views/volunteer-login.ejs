@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Login-Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/volunteer-login-reg.css">
+    <link rel="shortcut icon" href="/images/Vector.svg" type="svg">
+</head>
+<body>
+    <div class="full-page">
+        <a href="/"><img class="logo-img" src="images/Logo.svg" alt="logo-img"></a>
+        <div id="login-form" class="login-page">
+          <div class="form-box">
+            <div class="button-box">
+              <h3 class="heading">Volunteers</h3>
+            </div>
+            <form id="login" class="input-group-login" method="post" action="/volunteer-login">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Email Id"
+                required
+                name="loginEmail"
+                autocomplete="off"
+              />
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Enter Password"
+                required
+                name="loginPassword"
+              />
+              <button type="submit" class="submit-btn-login">Log in</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+</body>
+</html>

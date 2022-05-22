@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Gallery</title>
+    <link rel="stylesheet" href="/css/user-gallery.css" />
+    <link rel="shortcut icon" href="/images/Vector.svg" type="svg">
+</head>
+<body>
+  <a class="back" href="/user-prof"><button><img src="/images/arrow-return-left.svg" alt="back-arrow"></button></a>
+  <ul class="grid">
+      <% if(gallery.length !== 0) {%>
+          <% gallery.forEach(data => {%>
+            <li>
+              <figure class="grid__figure">
+                <img src="<%= data.url %> " alt="gallery-img">
+                <figcaption> TreeID: <%= data.tid %>  </figcaption>
+                <figcaption> Tree Name: <%= data.tname %>  </figcaption>
+                <figcaption> Date: <%= data.date %>  </figcaption>
+                <figcaption> Planted By: <%= data.volName %>  </figcaption>
+              </figure>
+            </li>
+          <%}); %> 
+        <% } else {%>
+          <h1>You didn't plant anything</h1>
+          <% }  %>   
+  </ul>
+</body>
+</html>

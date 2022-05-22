@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #009BA0;
+    width: 100%;
+    height: 54px;
+    /* z-index: 1;
+    position: fixed; */
+}
+
+.tree-name {
+    margin: auto 20px;
+}
+
+.tree-price {
+    margin: auto 4px;
+}
+
+.list-of-trees-left {
+    position: relative;
+    background-color: rgba(175, 226, 101, 0.7);
+    display: inline-block;
+}
+
+.list-of-trees-left:hover {
+    transform: scale(1.04);
+}
+
+.list-of-trees-right:hover {
+    transform: scale(1.04);
+}
+
+.list-of-trees-left h1 {
+    margin: 25px 139px;
+    text-align: center;
+}
+
+.about-tree-details h1 {
+    margin: 25px 139px;
+    text-align: center;
+}
+
+.tree-img img {
+    padding-left: 125px;
+    padding-right: 40px;
+}
+
+.quote-left {
+    margin-right: 20px;
+    height: 25px;
+}
+
+.quote-right {
+    float: right;
+    margin-right: -19px;
+    height: 25px;
+}
+
+.about-tree {
+    margin: auto 65px;
+    margin-left: 65px;
+    text-align: center;
+    margin-left: 108px;
+}
+
+.tree-img-right {
+    float: right;
+    padding-left: 40px;
+    padding-right: 125px;
+}
+
+.about-tree p {
+    margin-left: 20px;
+    margin-right: 73px;
+    line-height: 24px;
+    font-size: 17px;
+}
+
+.message {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 1.25rem auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 30px;
+    margin-right: 73px;
+    width: 777px;
+    display: flex;
+}
+
+.message p {
+    padding: 8px;
+}
+
+section {
+    font-weight: 600;
+}
+
+.list-of-trees-left img {
+    float: left;
+}
+
+.list-of-trees-right {
+    background-color: #FFFA8C;
+    position: relative;
+    display: inline-block;
+    height: 333px;
+}
+
+.message-right {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 1.25rem auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 133px;
+    margin-right: 73px;
+    width: 777px;
+    display: flex;
+}
+
+.copyright {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    background: #009BA0;
+    color: rgb(243, 240, 240);
+    text-align: center;
+    height: 52px;
+}
+
+.copyright p {
+    margin: 1.875rem;
+}
+
+.copyright p:hover {
+    cursor: pointer;
+}

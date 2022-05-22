@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    min-height: 100%;
+}
+
+.profile {
+    background: url("/images/Pexels\ Photo\ by\ Michael.png");
+    height: auto;
+    width: auto;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .profile-area {
+    width: 797px;
+    background: #FFFFFF80;
+    margin: 0 auto;
+    height: 100%;
+} */
+
+
+.profile-area-section img {
+    margin: 7px auto;
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 100px;
+}
+
+.profile-img {
+    height: 200px;
+    right: 0px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff9e;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.profile-img img {
+    margin: auto;
+    left: 120px;
+    position: relative;
+    height: auto;
+    width: 200px;
+}
+
+.profile-img h1 {
+    width: 399px;
+    position: relative;
+    text-align: center;
+    height: 40px;
+    top: 19px;
+    right: 123px;
+    height: 200px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.profile-img p {
+    right: 226px;
+    position: relative;
+    top: 75px;
+    font-family: sans-serif;
+    right: 412px;
+}
+
+
+.profile-img a {
+    right: 202px;
+    position: relative;
+    top: 123px;
+    font-family: sans-serif;
+    right: 591px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.section img {
+    width: 100%;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 13px;
+}
+
+.your-plants h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+
+.css-serial {
+    counter-reset: serial-number;
+    /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+    counter-increment: serial-number;
+    /* Increment the serial number counter */
+    content: counter(serial-number);
+    /* Display the counter */
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px 15px 0 0;
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    font-family: sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+section {
+    margin: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

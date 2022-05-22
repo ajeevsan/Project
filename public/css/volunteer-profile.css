@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("/images/Pexels\ Photo\ by\ Muhammad\ Khairul\ Iddin\ Adnan.png");
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+h1, h3, p {
+    font-family: 'Open-sans', sans-serif;
+}
+
+.left {
+	width: 630px;
+}
+
+.notice-head {
+    position: relative;
+	top: 60px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.message {
+	border: 2px solid white;
+	border-radius: 15px;
+	margin: 40px auto;
+	height: auto;
+	width: 390px;
+	text-align: left;
+	padding: 9px;
+	top: 60px;
+	position: relative;
+}
+
+.left {
+	height: 100%;
+	/* display: inline; */
+	width: 669px;
+	position: relative;
+}
+
+.logo-img{
+	height: auto;
+	width: 310px;
+	position: relative;
+	margin: 97px auto auto auto;
+	display: block;
+}
+
+.left h1 {
+	color: white;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	margin-top: 14px;
+}
+
+.left h3 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin: 10px auto;
+}
+
+.left p {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.right {
+	background: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	height: 824px;
+	/* display: inline; */
+	position: relative;
+    margin-right: 50px;
+}
+
+.avatar-img {
+	height: auto;
+	width: 142px;
+	position: relative;
+	margin: 30px auto auto auto;
+	display: block;
+}
+
+.notification-icon {
+	width: 40px;
+	height: auto;
+	margin: 40px auto;
+	display: flex;
+}
+
+.right h3 {
+	border: 2px solid black;
+	text-align: center;
+	width: 165px;
+	border-radius: 20px;
+	margin: 20px auto;
+	font-size: 27px;
+	font-weight: 300;
+}
+
+.details {
+	text-align: left;
+	width: auto;
+	margin: auto 300px;
+	padding: 20px;
+}
+
+.details p {
+	padding: 5px;
+	text-align: center;
+}
+
+.activities {
+	padding: 17px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px 15px 0 0;
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+	padding: 7px 15px;
+	text-align: left;
+	font-weight: 400;
+	font-size: 12px;
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    font-family: sans-serif;
+}

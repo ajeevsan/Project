@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/user-profile.css" />
+    <link rel="shortcut icon" href="/images/Vector.svg" type="svg">
+  </head>
+
+  <body>
+    <div class="profile">
+      <div class="profile-area">
+        <div class="profile-area-section">
+          <a href="/"><img src="/images/Logo.svg" alt="gg-logo" /></a>
+          <div class="profile-img">
+            <% if(gender === 'female') { %> 
+              <img src="/images/girl avatar.svg" alt="girl-avtaar" />
+            <% } else {%> 
+              <img src="/images/Boy avatar.svg" alt="boy-avtaar" /> 
+              <% } %> 
+            <h1> <%= userName %>   </h1>
+            <p> <%= userEmail %>  </p>
+            <a href="/user-gallery">Your Plants Gallery</a>
+          </div>
+          <div class="your-plants">
+            <h1>Details</h1>
+          </div>
+          <section>
+            <div class="tbl-header">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                  <tr>
+                    <th>Tree ID</th>
+                    <th>Tree Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="tbl-content">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                  <% if(tdata.length != 0) { %>
+                    <% for(let i=0;i<tdata.length;i++){ %> 
+                     <tr>
+                       <td> <%= tdata[i].tid %> </td>
+                       <td> <%= tdata[i].tname %> </td>
+                       <td> <%= tdata[i].date %></td>
+                       <td> <%= tdata[i].location %> </td>
+                     </tr>
+                   <%} %>
+                   <% } else { %>
+                     <tr>
+                       <td></td>
+                       <td style="font-size: 35px; color: red;">No Data Found !!!</td>
+                       <td></td>
+                     </tr>
+                  <% } %>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(window)
+        .on("load resize ", function () {
+          var scrollWidth =
+            $(".tbl-content").width() - $(".tbl-content table").width();
+          $(".tbl-header").css({ "padding-right": scrollWidth });
+        })
+        .resize();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    min-width: 34.375rem;
+    position: relative;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ul li a {
+    display: inline-block;
+}
+
+.header {
+    background: url(/images/page1.png);
+    background-repeat: no-repeat;
+    min-height: 50rem;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.logo a img {
+    float: left;
+    margin: 1.875rem .25rem 1.875rem 5.75rem;
+    height: 5.875rem;
+}
+
+nav ul a {
+    color: white;
+    float: right;
+    margin: 1.25rem 2.1875rem;
+    float: right;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-family: Arial, "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.init h1 {
+    display: inline-block;
+    font-family: 'Alatsi', sans-serif;
+    font-size: 2.8125rem;
+    margin: 8.75rem 12.5rem 3.125rem 12.5rem;
+    width: 26.125rem;
+    text-align: center;
+    color: white;
+    line-height: 3.6875rem;
+    font-weight: 400;
+    left: 147px;
+    position: relative;
+}
+
+.init p {
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.375rem;
+    width: 30%;
+    float: right;
+    margin-right: 15rem;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+}
+
+.about-us {
+    height: 100%;
+    min-height: 50rem;
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+div .about-txt {
+    float: left;
+    width: 60%;
+    background-color: #afe265;
+    height: 100%;
+    min-height: 50rem;
+    text-align: center;
+    font-family: 'Open-sans', sans-serif;
+}
+
+div .details h1 {
+    margin: 9.375rem auto 1.875rem auto;
+    font-weight: 500;
+}
+
+div .details p {
+    font-family: 'Open-sans', sans-serif;
+    width: 32rem;
+    font-size: 1.5625rem;
+    margin: 2.5rem auto;
+    line-height: 200%;
+    font-weight: 300;
+}
+
+div .tree-img {
+    float: right;
+    width: 40%;
+    min-height: 50rem;
+}
+
+div .tree-img img {
+    width: 100%;
+    min-height: 50rem;
+    object-fit: cover;
+    height: 43.75rem;
+}
+
+
+/* Services */
+
+.services {
+    display: inline-block;
+}
+
+.three_box {
+    /* background-image: url(../images/Allura\ Small\ Bush.png), url(../images/Allura\ Trees\ \(1\.png), url(../images/Allura\ Vase\ Plant\ 2.png); */
+    background-image: url(../images/Trees\ and\ Plants.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: relative;
+    background-color: #FFFA8C;
+    width: 100%;
+    min-height: 43.75rem;
+    text-align: center;
+    padding: .625rem;
+}
+
+.box_text {
+    background: #fff;
+    text-align: center;
+    padding: 3.125rem 1.25rem 1.25rem 1.25rem;
+    border: #48ca95 solid .0625rem;
+    border-radius: .9375rem;
+}
+
+.service {
+    position: relative;
+}
+
+.service-heading h1 {
+    width: auto;
+    margin: auto 1.875rem;
+    margin-bottom: 1.875rem;
+    /* font-family: 'Open sans'; */
+    font-weight: 500;
+    margin-top: 3.75rem;
+    display: inline-block;
+    margin-left: 8.25rem;
+    position: relative;
+}
+
+.service-card {
+    background-color: rgba(175, 226, 101, 0.5);
+    width: 20.1875rem;
+    height: 30.563rem;
+    font-family: 'Open sans', sans-serif;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    margin: auto 51px;
+}
+
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+	height: 560px;
+	width: 500px;
+	background-color: #ffffff8f;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 20px;
+	top: 866px;
+}
+
+.button {
+    background-color: #009BA0;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: white;
+    color: #009BA0;
+    border: 2px solid #009BA0;
+}
+
+input {
+    margin: 15px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 42px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #666;
+}
+
+.service-card {
+    background-color: rgba(175, 226, 101, 0.5);
+    width: 20.1875rem;
+    height: 30.563rem;
+    font-family: 'Open sans', sans-serif;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    color: rgb(62, 102, 67);
+}
+
+.service-card h3 {
+    font-size: 1.75rem;
+    height: 2rem;
+    margin: 1.25rem auto;
+    /* text-decoration: underline; */
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+.col-md-4 img {
+    position: relative;
+}
+
+.bush-flower-pot img {
+    float: right;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    height: 8.4375rem;
+    width: 6.25rem;
+}
+
+#pot-img {
+    background: url(../images/Allura\ Vase\ Plant\ 2.png), url(../images/Allura\ Small\ Bush.png), url(../images/Allura\ Trees\ \(1\).png);
+}
+
+
+/* contact us */
+.contact-us {
+    background-color: #009BA0;
+    /* position: relative; */
+    display: flex;
+    width: 100%;
+    height: 20.1875rem;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-text {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.contact-btn {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    border: solid black .125rem;
+    border-radius: 2.3125rem;
+    width: 10.3125rem;
+    margin: 8.75rem auto;
+    background-color: white;
+    height: 2.8125rem;
+    font-style: 'Alatsi';
+}
+
+.contact-btn i {
+    text-align: center;
+    margin: auto .9375rem;
+    margin-right: .3125rem;
+    margin-left: 1.25rem;
+}
+
+.contact-btn p {
+    text-align: center;
+    margin: auto .625rem;
+    font-weight: 600;
+}
+
+.contact-btn:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #AFE265;
+    height: 26.563rem;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.hr-line {
+    margin: 0 auto;
+    border: #17b9c2 2px solid;
+    width: 100%;
+    color: #17b9c2;
+    background-color: #17b9c2;
+}
+
+.footer-logo {
+    margin: auto;
+    margin-right: 2.5rem;
+    margin-left: 12.3125rem;
+}
+
+
+.gg-address {
+    margin: auto;
+    width: 12.438rem;
+    margin-left: .625rem;
+    margin-right: 6.8125rem;
+}
+
+.follow-us {
+    margin: auto;
+    margin-left: 6.875rem;
+    margin-top: 3.875rem;
+}
+
+.logo-details {
+    margin: .8125rem;
+}
+
+.logo-details a i{
+    color: black;
+}
+
+.follow-us .social-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-logo i {
+    margin: 1.25rem auto;
+}
+
+
+.copyright {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    background: #AFE265;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.copyright p {
+    margin: 1.875rem;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+
+
+#slider figure i {
+    width: 20%;
+    float: left;
+}
+
+#gallery {
+    overflow: hidden;
+}
+
+#gallery figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 24s gallery infinite;
+}
+
+#gallery figure i {
+    width: 20%;
+    float: left;
+}
+
+
+@keyframes slider {
+    0% {
+        left: 0
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+@keyframes gallery {
+    0% {
+        left: 0
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}

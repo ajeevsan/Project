@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFA8C;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-img {
+	position: relative;
+	margin: 15px auto;
+	display: flex;
+	height: auto;
+	width: 300px;
+}
+
+.table-head {
+    text-align: center;
+    background-color: #AFE265;
+}
+
+.admin-data {
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+}
+
+.admin-data p {
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.btn {
+	position: relative;
+	margin: auto;
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.admin_profile {
+    position: relative;
+    top: 671px;
+    margin: 20px;
+    left: 169px;
+}
+
+.data-entry {
+	background-color: #AFE265;
+	width: 556px;
+	float: left;
+	margin: 30px;
+	height: auto;
+	margin-left: 80px;
+}
+
+.data-entry h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.data-entry label {
+	margin: 10px;
+	margin-top: 2px;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px 15px 0 0;
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+	padding: 12px 15px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 12px;
+	color: black;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: sans-serif;
+	background-color: #FFFFFF;
+}
+
+td {
+	padding: 5px;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 18px;
+	color: black;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+	font-family: sans-serif;
+}
+
+.table {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.volunteer-details {
+	position: relative;
+	float: right;
+	width: auto;
+	height: 640px;
+	width: 556px;
+	background-color: #AFE265;
+	margin: 30px;
+	margin-top: 28px;
+	margin-right: 80px;
+}
+
+.add-vol {
+    background-color: #009BA0;
+    color: white;
+}
+
+.add-vol:hover {
+    background-color: white;
+    color: #009BA0;
+}
+
+.volunteer-details h4 {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.notice-box {
+	position: relative;
+	display: flex;
+	float: inline-end;
+	margin: auto;
+	text-align: center;
+	right: 405px;
+	top: 92px;
+}
+
+.notice-box textarea {
+	width: 600px;
+	height: 256px;
+}
+
+.notice-box label {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.message-btn {
+    position: relative;
+    display: inline-block;
+    margin: 9px;
+    /* margin: ; */
+    background-color: #009BA0;
+    color: white;
+}
+
+.message-btn:hover {
+    background-color: white;
+    color: #009BA0;
+}

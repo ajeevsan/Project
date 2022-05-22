@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.full-page {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/pexels-karolina-grabowska-4207908\ 1.png");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 1.75rem;
+}
+
+
+
+.logo-img {
+    height: 3.875rem;
+    width: auto;
+    display: flex;
+    margin: 1.25rem auto;
+    margin-bottom: 0;
+}
+
+.form-box {
+    width: 23.75rem;
+    height: 31.875rem;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: .625rem;
+    overflow: hidden;
+    top: 0rem;
+    border-radius: 15px;
+}
+
+.button-box {
+    width: 13.75rem;
+    margin: 2.1875rem auto;
+    position: relative;
+    box-shadow: 0 0 1.25rem .5625rem #ff61241f;
+    border-radius: 1.875rem;
+}
+
+.toggle-btn {
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 6.875rem;
+    height: 100%;
+    background: #686767a1;
+    border-radius: 1.875rem;
+    transition: .5s;
+}
+
+.vol-btn {
+    background: transparent;
+    border-radius: 1.5rem;
+    width: 12.0625rem;
+    height: 2.625rem;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: .125rem white solid;
+}
+
+.vol-btn a {
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: white;
+    font-size: .9375rem;
+}
+
+.admin-login {
+	background: transparent;
+	border-radius: 1.5rem;
+	width: 12.0625rem;
+	height: 2.625rem;
+	position: relative;
+	margin: 10px auto;
+	display: block;
+	border: .125rem white solid;
+}
+
+.admin-login a {
+	position: relative;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	margin: 15px auto;
+	font-size: .9375rem;
+}
+
+.input-group-login {
+    top: 9.375rem;
+    position: absolute;
+    width: 17.5rem;
+    transition: .5s;
+}
+
+
+
+.input-group-register {
+    top: 7.5rem;
+    position: absolute;
+    width: 17.5rem;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: .625rem 0;
+    margin: .3125rem 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: .0625rem solid #999;
+    outline: none;
+    background: transparent;
+    color: #999;
+}
+
+.submit-btn-login {
+    width: 39%;
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    display: block;
+    margin: 1.375rem auto;
+    background: #D0D0D000;
+    border: .125rem solid white;
+    outline: none;
+    border-radius: 1.875rem;
+    color: white;
+    margin-top: 80px;
+}
+
+.submit-btn-reg {
+    width: 39%;
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    display: block;
+    margin: 1.375rem auto;
+    background: #D0D0D000;
+    border: .125rem solid white;
+    outline: none;
+    border-radius: 1.875rem;
+    color: white;
+}
+
+.check-box {
+    margin: 1.875rem .625rem 2.125rem 0;
+}
+
+span {
+    color: #777;
+    font-size: .75rem;
+    bottom: 10.125rem;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+#login {
+    left: 3.125rem;
+    top: 6.25rem;
+}
+
+#login input {
+    color: white;
+    font-size: 15;
+}
+
+#register {
+    left: 28.125rem;
+    top: 6.25rem;
+}
+
+#register input {
+    color: white;
+    font-size: 15;
+}
+
+@media only screen and (min-width: 37.5rem) {
+    /* For tablets */
+    #login-form{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
